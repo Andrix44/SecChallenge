@@ -1,0 +1,100 @@
+Hi, welcome to SecChallenge-2023. Here is a menu.
+
+Rice Krispie Treat: $10
+Ice Cream: $20
+Cookies: $40
+Cake: $80
+
+Here are your sides.
+
+Whipped Cream: $1
+Chocolate: $2
+Caramel: $3
+Sugar topping: $4
+Gold foil: $5
+
+May I take your order?
+
+Person 1 would like the Cake.
+Person 1 would also like the Ice Cream, hold the Whipped Cream.
+Person 1 will pay for his order!
+Person 2 would like the Cake.
+Person 2 would also like the Ice Cream.
+Person 2 will pay for his order!
+Person 3 would like the Cookies.
+Person 3 would also like the Rice Krispie Treat.
+Person 3 will pay for his order!
+Person 4 would like the Cookies.
+Person 4 would also like the Rice Krispie Treat with Whipped Cream.
+Person 4 will pay for his order!
+Person 5 would like the Cake.
+Person 5 would also like the Cookies with Caramel.
+Person 5 will pay for his order!
+Person 6 would like the Cake.
+Person 6 would also like the Cookies, hold the Sugar topping.
+Person 6 will pay for his order!
+Person 7 would like the Cake.
+Person 7 would also like the Ice Cream with Sugar topping.
+Person 7 will pay for his order!
+Person 8 would like the Cookies.
+Person 8 would also like the Rice Krispie Treat with Chocolate.
+Person 8 will pay for his order!
+Person 9 would like the Cake.
+Person 9 would also like the Ice Cream.
+Person 9 needs 10 dollars more for his order!
+Person 9 will pay for his order!
+Person 10 would like the Cake.
+Person 10 would also like the Ice Cream.
+Person 10 needs 7 dollars more for his order!
+Person 10 will pay for his order!
+Person 11 would like the Cookies.
+Person 11 would also like the Rice Krispie Treat with Caramel.
+Person 11 will pay for his order!
+Person 12 would like the Cake.
+Person 12 would also like the Rice Krispie Treat with Gold foil.
+Person 12 will pay for his order!
+Person 13 would like the Cookies.
+Person 13 would also like the Rice Krispie Treat with Chocolate.
+Person 13 will pay for his order!
+Person 14 would like the Cake.
+Person 14 would also like the Rice Krispie Treat with Gold foil.
+Person 14 will pay for his order!
+Person 15 would like the Cake.
+Person 15 would also like the Cookies with Whipped Cream.
+Person 15 will pay for his order!
+Person 16 would like the Cookies.
+Person 16 would also like the Rice Krispie Treat, hold the Chocolate.
+Person 16 will pay for his order!
+Person 17 would like the Cake.
+Person 17 would also like the Cookies, hold the Caramel.
+Person 17 will pay for his order!
+Person 18 would like the Cake.
+Person 18 would also like the Cookies.
+Person 18 needs 6 dollars less for his order!
+Person 18 will pay for his order!
+Person 19 would like the Cake.
+Person 19 would also like the Rice Krispie Treat with Gold foil.
+Person 19 will pay for his order!
+Person 20 would like the Cookies.
+Person 20 would also like the Rice Krispie Treat, hold the Chocolate.
+Person 20 will pay for his order!
+Person 21 would like the Cake.
+Person 21 would also like the Cookies.
+Person 21 needs 6 dollars less for his order!
+Person 21 will pay for his order!
+Person 22 would like the Cake.
+Person 22 would also like the Ice Cream.
+Person 22 will pay for his order!
+Person 23 would like the Cookies.
+Person 23 would also like the Rice Krispie Treat with Whipped Cream.
+Person 23 will pay for his order!
+Person 24 would like the Cake.
+Person 24 would also like the Cookies.
+Person 24 needs 6 dollars less for his order!
+Person 24 will pay for his order!
+Person 25 would like the Cake.
+Person 25 would also like the Cookies with Gold foil.
+Person 25 will pay for his order!
+Just wait while we decide...
+
+OK, that will be $20.23. Thanks for coming!

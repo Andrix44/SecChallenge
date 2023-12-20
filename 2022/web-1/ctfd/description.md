@@ -1,0 +1,1 @@
+Your uncle got scammed but he's too embarrassed to tell you how much he had lost. Can you find out?

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Leave feedback</title>
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1 style="text-align: center;">Share your feedback:</h1>
+    <form action="/review" method="POST" style="margin: auto; text-align: center;">
+        <input type="text" name="review" placeholder="Enter feedback...">
+        <input type="submit" name="submit" value="Post">
+    </form>
+
+    {% for review in reviews %}
+        <h4 style="text-align: center;">{{ review[1] | safe }}</h4>
+        <div></div>
+    {% endfor %}
+
+    {% if reviews | length > 0 %}
+        <p style="position: fixed ;bottom: 0;">Bargain Duck can't believe his ears.</p>
+    {% endif %}
+</div>
+{% endblock %}

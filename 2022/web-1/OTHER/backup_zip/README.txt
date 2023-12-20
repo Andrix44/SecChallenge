@@ -1,0 +1,1 @@
+I've decided to upload the files to the cloud instead and made sure that they become inaccessible a while after they are finished. Should be enough for GDPR, right?

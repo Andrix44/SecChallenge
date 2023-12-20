@@ -1,0 +1,30 @@
+You can notice that the program is looping through the input and does one of five different operations on the input byte based on it's index.
+These are removed from the binary and provided as symbolic execution outputs. The important register is RDI which stores the encrypted byte.
+The 5 operations are as follows: (formatted to make them more readable)
+
+rdi:64 bv[63..0] concat(extract(63, 8, select(Memory, rcx)), 
+~(((select(Memory, rcx) <<        (((extract(7, 0, (extract(31, 0, (r13 + r13)) + (extract(31, 0, (r13 + r13)) * 0x2))) & 0x1f) % 0x8) % 0x8)) | 
+   (select(Memory, rcx) >> (0x8 - (((extract(7, 0, (extract(31, 0, (r13 + r13)) + (extract(31, 0, (r13 + r13)) * 0x2))) & 0x1f) % 0x8) % 0x8))))))
+
+rdi:64 bv[63..0] concat(extract(63, 8, ((extract(31, 0, r13) * extract(31, 0, r13)) * (extract(31, 0, r13) * extract(31, 0, r13)))), 
+                       (extract( 7, 0, ((extract(31, 0, r13) * extract(31, 0, r13)) * (extract(31, 0, r13) * extract(31, 0, r13)))) ^ select(Memory, rcx)))
+
+rdi:64 bv[63..0] concat(extract(63, 8, extract(31, 0, (r13 + (r13 * 0x4)))), 
+                      ((extract( 7, 0,                (r13 + (r13 * 0x4))) + select(Memory, rcx)) + 0x3))
+
+rdi:64 bv[63..0] concat(extract(63, 8, select(Memory, rcx)), 
+                                     ((select(Memory, rcx) >>        ((((0x4 - extract(7, 0, r13)) & 0x1f) % 0x8) % 0x8)) | 
+                                      (select(Memory, rcx) << (0x8 - ((((0x4 - extract(7, 0, r13)) & 0x1f) % 0x8) % 0x8)))))
+
+rdi:64 bv[63..0] concat(extract(63, 8, select(Memory, rcx)), 
+                                    (((select(Memory, rcx) >> 0x3) & 0x10) | 
+                                    (((select(Memory, rcx) >> 0x1) & 0x20) | 
+                                    (((select(Memory, rcx) >> 0x4) & 0x2) | 
+                      ((extract(7, 0, (select(Memory, rcx) * 0x4)) & 0x40) | 
+                                    (((select(Memory, rcx) >> 0x1) & 0x4) | 
+                                    (((select(Memory, rcx) << 0x5) & 0x80) | 
+                                    (((select(Memory, rcx) >> 0x1) & 0x1) | 
+                       (extract(7, 0, (select(Memory, rcx) * 0x8)) & 0x8)))))))))
+
+It is possible to recognize what the transformations are and reverse them to create a decryptor.
+(Can be found in the Rust source code)

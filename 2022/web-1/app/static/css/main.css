@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+html{
+  width:100%;
+  height: 100%;
+}
+
+body{
+    background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+    background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
+    margin: 10;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.title{
+  font-weight: 800;
+  color: transparent;
+  font-size:120px;
+  background: url("/static/img/background.jpeg") repeat;
+  background-position: 40% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  line-height:190px;
+  letter-spacing: -8px;
+}
+.subtitle{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:10px;
+}
+
+.menu-button{
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.menu-button:visited{
+  color: black;
+}
